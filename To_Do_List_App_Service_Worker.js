@@ -1,23 +1,23 @@
 var cacheName = 'To_Do_List';
 var cachefiles = [
-    '/',/*url*/
-    'index.html',
-    'to_do_list_app_css.css',
-    'to_do_list_app_js.js',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/',/*url*/
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/index.html',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_css.css',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_js.js',
     
-    'To_Do_List_App_Service_Worker.js',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/To_Do_List_App_Service_Worker.js',
 
-    'to_do_list_app.ico',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app.ico',
 
-    'to_do_list_app_icon_64X64.png',
-    'to_do_list_app_icon_72X72.png',
-    'to_do_list_app_icon_96X96.png',
-    'to_do_list_app_icon_128X128.png',
-    'to_do_list_app_icon_144X144.png',
-    'to_do_list_app_icon_152X152.png',
-    'to_do_list_app_icon_192X192.png',
-    'to_do_list_app_icon_256X256.png',
-    'to_do_list_app_icon_512X512.png'
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_64X64.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_72X72.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_96X96.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_128X128.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_144X144.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_152X152.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_192X192.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_256X256.png',
+    'https://vishalkumarsankhyan.github.io/To_do_list.github.io/to_do_list_app_icon_512X512.png'
 ];
 
 self.addEventListener("install", installEvent => {

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- browser them color-->
+    <meta name="theme-color" content="#fff">
+
+    <!-- description -->
+    <meta name="description" content="To Do List Web App PWA using HTML CSS JS by VKS . Auther : Vishal Kumar Sankhyan">
+
+    <!-- keywords -->
+    <meta name="keywords"
+        content="To Do List, HTML, CSS, Javascript, PWA, Progressive web Application, Vishal Kumar Sankhyan,Vishal, Kumar, Sankhyan">
+
+    <!-- author -->
+    <meta name="author" content="Vishal Kumar Sankhyan">
+
+    <!-- browser tap icon-->
+    <link rel="shortcut icon" href="to_do_list_app.ico" type="image/x-icon">
+
+    <!--manifest-->
+    <link rel="manifest" href="manifest.json">
+
+    <!--ios support-->
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_64X64.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_72X72.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_96X96.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_128X128.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_144X144.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_152X152.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_192X192.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_256X256.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_512X512.png">
+
+    <link rel="stylesheet" href="to_do_list_app_css.css">
+
+</head>
+
+<body>
+    <div class="to_do_list_app_body">
+
+        <div class="to_do_list_app_navbar">
+            <div class="to_do_list_title">
+                To Do List
+            </div>
+
+            <div class="to_do_list_menu_dots">
+                <div class="to_do_list_menu_dot"></div>
+                <div class="to_do_list_menu_dot_middle"></div>
+                <div class="to_do_list_menu_dot"></div>
+            </div>
+        </div>
+
+        <div class="to_do_list_dot_menu_section">
+            <div class="to_do_list_dot_menu_option" onclick="to_do_list_info_open_function()">
+                Info
+            </div>
+        </div>
+
+        <div class="to_do_list_info_section" onclick="to_do_list_info_close_function()">
+            <div class="to_do_list_info_section_box">
+                <div class="to_do_list_info_section_box_header">
+                    Info
+                </div>
+                <div class="to_do_list_info_section_box_detail">
+                    App Name : To Do List
+                    <br>
+                    Developed by VKS
+                    <br>
+                    Version : 1.0
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="to_do_list_add_task_button" onclick="add_task_button_function()">
+            <div class="to_do_list_add_task_button_icon">
+                +
+            </div>
+        </div>
+
+        <div class="to_do_list_add_task_section">
+            <div class="to_do_list_add_task_section_navbar">
+                <div class="to_do_list_add_task_section_navbar_backbtn" onclick="close_add_task_section()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                    </svg>
+                </div>
+                <div class="to_do_list_add_task_section_navbar_title_box">
+                    <div class="to_do_list_add_task_section_navbar_title">
+                        New Task
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="to_do_list_add_section_1">
+                <label for="What is to be done ?" id="to_do_list_add_section_label_1">What is to be done ?</label>
+                <input type="text" id="to_do_list_add_section_input" autocomplete="off">
+            </div>
+
+            <div class="to_do_list_add_section_2">
+                <label for="Time" id="to_do_list_add_section_label_2">Time</label>
+                <input type="time" id="to_do_list_add_section_time">
+            </div>
+
+            <div class="to_do_list_add_section_3">
+                <label for="Date" id="to_do_list_add_section_label_3">Date</label>
+                <input type="date" id="to_do_list_add_section_date" value="2021-06-01">
+            </div>
+
+            <div class="to_do_list_add_section_4">
+                <label for="Repeat" id="to_do_list_add_section_label_4">Repeat</label>
+                <select id="to_do_list_add_section_repeat">
+                    <option>Once</option>
+                    <option disabled>Daily</option>
+                </select>
+            </div>
+
+            <div class="to_do_list_add_section_5">
+                <button class="to_do_list_add_section_cancel_btn" onclick="close_add_task_section()">Cancel</button>
+                <button class="to_do_list_add_section_done_btn" disabled>Done</button>
+            </div>
+        </div>
+
+        <div class="to_do_list_Edit_task_section">
+            <div class="to_do_list_Edit_task_section_navbar">
+                <div class="to_do_list_Edit_task_section_navbar_backbtn" onclick="close_edit_task_section()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-short"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                    </svg>
+                </div>
+                <div class="to_do_list_add_Edit_section_navbar_title_box">
+                    <div class="to_do_list_Edit_task_section_navbar_title">
+                        Edit Task
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="to_do_list_Edit_section_1">
+                <label for="What is to be done ?" id="to_do_list_Edit_section_label_1">What is to be done ?</label>
+                <input type="text" id="to_do_list_Edit_section_input" autocomplete="off">
+            </div>
+
+            <div class="to_do_list_Edit_section_2">
+                <label for="Time" id="to_do_list_Edit_section_label_2">Time</label>
+                <input type="time" id="to_do_list_Edit_section_time">
+            </div>
+
+            <div class="to_do_list_Edit_section_3">
+                <label for="Date" id="to_do_list_Edit_section_label_3">Date</label>
+                <input type="date" id="to_do_list_Edit_section_date" value="2021-06-01">
+            </div>
+
+            <div class="to_do_list_Edit_section_4">
+                <label for="Repeat" id="to_do_list_Edit_section_label_4">Repeat</label>
+                <select id="to_do_list_Edit_section_repeat">
+                    <option>Once</option>
+                    <option disabled>Daily</option>
+                </select>
+            </div>
+
+            <div class="to_do_list_Edit_section_5">
+                <button class="to_do_list_Edit_section_cancel_btn" onclick="close_edit_task_section()">Cancel</button>
+                <button class="to_do_list_Edit_section_done_btn" onclick="to_do_edit_task_done_function()">Done</button>
+            </div>
+        </div>
+
+        <div class="to_do_list_app_main_section">
+            <div class="to_do_list_app_overdue_section">
+                <div class="to_do_list_app_overdue_title">
+                    Overdue
+                </div>
+
+                <div class="to_do_list_app_overdue_main_box">
+                </div>
+            </div>
+
+            <div class="to_do_list_app_today_section">
+                <div class="to_do_list_app_overdue_title">
+                    Today
+                </div>
+
+                <div class="to_do_list_app_today_main_box">
+                </div>
+
+            </div>
+
+            <div class="to_do_list_app_completed_section">
+                <div class="to_do_list_app_overdue_title">
+                    Completed
+                </div>
+
+                <div class="to_do_list_app_completed_main_box">
+                </div>
+
+            </div>
+
+            <div class="to_do_list_app_tomorrow_section">
+                <div class="to_do_list_app_overdue_title">
+                    Tomorrow
+                </div>
+
+                <div class="to_do_list_app_tomorrow_main_box">
+                </div>
+
+            </div>
+
+            <div class="to_do_list_app_thisweek_section">
+                <div class="to_do_list_app_overdue_title">
+                    Up Coming
+                </div>
+
+                <div class="to_do_list_app_thisweek_main_box">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="to_do_list_app_js.js"></script>
+</body>
+
+</html>

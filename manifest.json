@@ -1,0 +1,58 @@
+{
+    "name": "To Do List",
+    "short_name": "To Do List",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "to_do_list_app_icon_64X64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "to_do_list_app_icon_72X72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "to_do_list_app_icon_96X96.png",
+            "type": "image/png",
+            "sizes": "92x92"
+        },
+        {
+            "src": "to_do_list_app_icon_128X128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "to_do_list_app_icon_144X144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "to_do_list_app_icon_152X152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+            
+        },
+        {
+            "src": "to_do_list_app_icon_192X192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose":"any maskable"
+        },
+        {
+            "src": "to_do_list_app_icon_256X256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "to_do_list_app_icon_512X512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

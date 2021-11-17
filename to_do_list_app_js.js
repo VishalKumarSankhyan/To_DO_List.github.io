@@ -1,7 +1,7 @@
 /* PWA  code start*/
 if ("serviceWorker" in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('To_Do_List_App_Service_Worker.js').then(() => {
+    navigator.serviceWorker.register('https://vishalkumarsankhyan.github.io/To_do_list.github.io/To_Do_List_App_Service_Worker.js').then(() => {
       console.log('Service Worker Registered')
     })
   })
